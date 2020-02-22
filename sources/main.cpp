@@ -12,8 +12,9 @@ int main()
 
 	sf::ContextSettings settings;
 	settings.antialiasingLevel = 8;
-
+	
 	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Disease propagation", window_settings, settings);
+	window.setFramerateLimit(60);
 
 	sf::Image icon;
 	icon.loadFromFile("dependencies/resources/icon.png");
